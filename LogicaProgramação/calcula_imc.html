@@ -1,0 +1,18 @@
+<script>
+  function nextLine() {
+    document.write('<br>')
+  }
+
+  function writeMessage(text) {
+    document.write(text)
+    nextLine()
+  }
+
+  function imcCalculator(name, weight, height) {
+    var imc = Math.round(weight / (height * height))
+    writeMessage('O IMC do(a) ' + name + ' é de ' + imc + '.')
+  }
+
+  imcCalculator('Mariana', 74, 1.72)
+  imcCalculator('Sandy', 45, 1.58)
+</script>

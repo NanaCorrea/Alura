@@ -1,0 +1,24 @@
+<script>
+  function nextLine() {
+    document.write('<br>')
+  }
+
+  function writeMessage(text) {
+    document.write(text)
+    nextLine()
+  }
+
+  var year = 2021
+  var ageSandy = year - 1983
+  var ageMariana = year - 1988
+
+  writeMessage(
+    'A Sandy tem ' +
+      ageSandy +
+      ' anos. A Mariana tem ' +
+      ageMariana +
+      ' anos. A diferença de idade entre elas é de ' +
+      (ageSandy - ageMariana) +
+      ' anos.'
+  )
+</script>

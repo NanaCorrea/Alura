@@ -1,0 +1,27 @@
+<script>
+  function nextLine() {
+    document.write('<br>')
+  }
+
+  function writeMessage(text) {
+    document.write(text)
+    nextLine()
+  }
+
+  var averageAge = 28
+  var brasilDiscoverDate = 1500
+  var currentYear = 2021
+  var generationsCount = Math.round(
+    (currentYear - brasilDiscoverDate) / averageAge
+  )
+
+  writeMessage(
+    'Desde ' +
+      brasilDiscoverDate +
+      ' se passaram ' +
+      generationsCount +
+      ' gerações. Levando em consideração que em média um casal tem filhos quando atinge os ' +
+      averageAge +
+      ' anos.'
+  )
+</script>
