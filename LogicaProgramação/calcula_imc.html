@@ -10,9 +10,12 @@
 
   function imcCalculator(name, weight, height) {
     var imc = Math.round(weight / (height * height))
-    writeMessage('O IMC do(a) ' + name + ' é de ' + imc + '.')
+    return imc
   }
 
-  imcCalculator('Mariana', 74, 1.72)
-  imcCalculator('Sandy', 45, 1.58)
+  var imcMariana = imcCalculator('Mariana', 74, 1.72)
+  var imcSandy = imcCalculator('Sandy', 45, 1.58)
+
+  writeMessage(imcMariana)
+  writeMessage(imcSandy)
 </script>
