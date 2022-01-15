@@ -1,0 +1,22 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  function mostra(frase) {
+    document.write(frase)
+  }
+
+  var idade = 0
+  var total = 0
+  var membros = parseInt(prompt('Quantos membros a sua família possui?'))
+
+  for (var contador = 0; contador < membros; contador++) {
+    idade = parseInt(prompt('Digite a idade de um integrante da família'))
+    total = total + idade
+  }
+
+  mostra('A média de idade é ' + total / membros)
+</script>
