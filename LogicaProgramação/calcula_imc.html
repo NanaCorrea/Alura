@@ -8,14 +8,20 @@
     nextLine()
   }
 
-  function imcCalculator(name, weight, height) {
-    var imc = Math.round(weight / (height * height))
-    return imc
+  function imcCalculator(weight, height) {
+    return Math.round(weight / (height * height))
   }
 
-  var imcMariana = imcCalculator('Mariana', 74, 1.72)
-  var imcSandy = imcCalculator('Sandy', 45, 1.58)
+  var imcMariana = imcCalculator(74, 1.72)
+  var imcSandy = imcCalculator(45, 1.58)
+  var somaIMC = imcMariana + imcSandy
 
-  writeMessage(imcMariana)
-  writeMessage(imcSandy)
+  writeMessage(
+    'O IMC da Mariana é: ' +
+      imcMariana +
+      '. O IMC da Sandy é: ' +
+      imcSandy +
+      '. O IMC das duas somados é: ' +
+      somaIMC
+  )
 </script>

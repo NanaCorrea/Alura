@@ -1,0 +1,55 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  function mostra(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
+  function sorteia(n) {
+    return Math.round(Math.random() * n)
+  }
+
+  var numeroMaximo = parseInt(
+    prompt('Digite o número máximo a ser adivinhado:')
+  )
+  var numeroCerto = sorteia(numeroMaximo)
+  var numeroPensado = parseInt(
+    prompt('Digite um número de 0 a ' + numeroMaximo)
+  )
+
+  if (numeroPensado == numeroCerto) {
+    mostra(
+      'Você acertou! Você pensou em ' +
+        numeroPensado +
+        '. O número certo era ' +
+        numeroCerto +
+        '. E o número máximo era ' +
+        numeroMaximo
+    )
+  }
+  if (numeroPensado > numeroCerto) {
+    mostra(
+      'Você errou, o número certo era menor! Você pensou em ' +
+        numeroPensado +
+        '. O número certo era ' +
+        numeroCerto +
+        '. E o número máximo era ' +
+        numeroMaximo
+    )
+  }
+  if (numeroPensado < numeroCerto) {
+    mostra(
+      'Você errou, o número certo era maior! Você pensou em ' +
+        numeroPensado +
+        '. O número certo era ' +
+        numeroCerto +
+        '. E o número máximo era ' +
+        numeroMaximo
+    )
+  }
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  function mostra(frase) {
+    document.write(frase)
+  }
+
+  for (multiplicador = 0; multiplicador <= 10; multiplicador++) {
+    mostra('Tabuada do ' + multiplicador)
+    pulaLinha()
+    for (multiplicado = 0; multiplicado <= 10; multiplicado++) {
+      mostra(
+        multiplicador +
+          ' X ' +
+          multiplicado +
+          ' = ' +
+          multiplicador * multiplicado
+      )
+      pulaLinha()
+    }
+    pulaLinha()
+  }
+</script>

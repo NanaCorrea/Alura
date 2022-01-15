@@ -1,0 +1,34 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  function mostra(frase) {
+    document.write(frase)
+  }
+
+  const numeroCerto = Math.round(Math.random() * 10)
+  const numeroPensado = parseInt(prompt('Digite um número entre 0 a 10'))
+
+  function advinhaNumero(numeroCerto, numeroPensado) {
+    if (numeroPensado == numeroCerto) {
+      mostra(
+        'Parabéns! Você acertou!!! O número certo era: ' +
+          numeroCerto +
+          '. E você escolheu o número: ' +
+          numeroPensado
+      )
+    } else {
+      mostra(
+        'Poxa, você errou :( O número certo era: ' +
+          numeroCerto +
+          '. E você escolheu o número: ' +
+          numeroPensado
+      )
+    }
+  }
+
+  advinhaNumero(numeroCerto, numeroPensado)
+</script>
